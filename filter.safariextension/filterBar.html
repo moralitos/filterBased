@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="filterBar.css" type="text/css">
+
+</head>
+<body>
+<input id="getFilters" type="button" onClick="getFilters();" title="Get Filters" value="Get Filters"> 
+
+<script src='jquery-1.9.1.js'></script>
+<script>
+  const ExtensionGlobalPage = safari.extension.globalPage.contentWindow;
+  function getFilters() {
+    alert($('#getFilters').size());
+  }
+</script>
+</body>
+</html>
